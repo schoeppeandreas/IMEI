@@ -1,0 +1,89 @@
+.root {
+	-fx-base: #F6F6F6;
+	-fx-text-fill: black;
+}
+
+.button {
+    -fx-font-size: 13.0; 
+	-fx-font-weight: bold;
+	-fx-base: #D3d3d3;
+	-fx-alignment: center;
+	-fx-background-radius: 0.0;
+	-fx-background-insets: 2.0;
+	
+}
+
+#btnVerdacht  {
+	-fx-base: #B71427;
+	
+}
+
+#btnVerdachtSpeichern{
+	-fx-base: #B71427;
+}
+
+.text-field {
+	-fx-background-radius: 0.0;
+	-fx-prompt-text-fill: gray;
+}
+
+.table-view {
+	-fx-font-size: 45.0;
+}
+
+.table-view .column-header {
+	-fx-font-size: 15.0;
+	-fx-background-radius: 0.0;
+}
+
+.combo-box {
+	-fx-font-size: 27.0;
+	-fx-font-weight: bold;
+	-fx-text-alignment: center;
+	-fx-alignment: center;
+	-fx-background-color: rgb(255,255,166);
+	-fx-background-fills: rgb(255,255,166);
+
+}
+
+#layerVerdacht{
+	-fx-background-color: #F6F6F6;
+}
+
+#comboVerdachtFirma {
+	-fx-base: #ECECEA;	
+	-fx-text-fill: #404040;	
+	
+}
+
+#labelMeldung {
+    -fx-font-size: 45.0; 
+	-fx-font-weight: bold;
+	-fx-alignment: center;
+	-fx-text-alignment: center;
+	-fx-text-fill: white;
+	-fx-background-color: #B71427;
+	-fx-background-fills: #B71427;
+
+}
+
+#labelMain{
+	-fx-font-size: 45.0; 
+	-fx-font-weight: bold;
+	-fx-alignment: center;
+	-fx-text-alignment: center;
+	-fx-text-fill: black;
+	-fx-background-color: #F6F6F6;
+	-fx-background-fills: #F6F6F6;
+}
+
+#verdachtRegion1 {
+	-fx-base: #B71427;
+	-fx-background-color: #B71427;
+	-fx-background-fills: #B71427;
+	-fx-fill: #B71427;
+	-fx-border-radius: 0.0;
+
+}
+
+

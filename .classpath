@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="lib" path="//FSSOM2/Chip-Level (09-SOM)/Java/LibaryJars/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="//FSSOM2/Chip-Level (09-SOM)/Java/LibaryJars/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="//FSSOM2/Chip-Level (09-SOM)/Java/LibaryJars/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="//FSSOM2/Chip-Level (09-SOM)/Java/LibaryJars/curvesapi-1.04.jar"/>
+	<classpathentry kind="lib" path="//FSSOM2/Chip-Level (09-SOM)/Java/LibaryJars/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="//FSSOM2/Chip-Level (09-SOM)/Java/LibaryJars/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="//FSSOM2/Chip-Level (09-SOM)/Java/LibaryJars/poi-3.15.jar"/>
+	<classpathentry kind="lib" path="//FSSOM2/Chip-Level (09-SOM)/Java/LibaryJars/poi-examples-3.15.jar"/>
+	<classpathentry kind="lib" path="//FSSOM2/Chip-Level (09-SOM)/Java/LibaryJars/poi-excelant-3.15.jar"/>
+	<classpathentry kind="lib" path="//FSSOM2/Chip-Level (09-SOM)/Java/LibaryJars/poi-ooxml-3.15.jar"/>
+	<classpathentry kind="lib" path="//FSSOM2/Chip-Level (09-SOM)/Java/LibaryJars/poi-ooxml-schemas-3.15.jar"/>
+	<classpathentry kind="lib" path="//FSSOM2/Chip-Level (09-SOM)/Java/LibaryJars/poi-scratchpad-3.15.jar"/>
+	<classpathentry kind="lib" path="//FSSOM2/Chip-Level (09-SOM)/Java/LibaryJars/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="600.0">
+         <top>
+            <FlowPane prefHeight="35.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+<!--                   <Label fx:id="labelMain" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="600.0" text="Handykontrolle" /> -->
+                  <TextField fx:id="txt1" alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" onKeyPressed="#txt1KeyPressed" prefHeight="57.0" prefWidth="431.0" promptText="IMEI oder Kartennummer">
+                     <FlowPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </FlowPane.margin>
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="btn1" alignment="CENTER_RIGHT" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#btn1click" prefHeight="56.0" prefWidth="69.0" text="Suchen" textAlignment="CENTER" />
+                  <Button fx:id="btnVerdacht" alignment="CENTER_RIGHT" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#btnVerdachtClick" prefHeight="56.0" prefWidth="69.0" text="Melden" textAlignment="CENTER" />
+               </children>
+            </FlowPane>
+         </top>
+         <center>
+            <TableView fx:id="tableView1" prefHeight="433.0" prefWidth="580.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="tableRow1" prefWidth="588.0" text="Suchergebniss" />
+              </columns>
+            </TableView>
+         </center>
+      </BorderPane>
+      <VBox fx:id="layerVerdacht" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label fx:id="labelMeldung" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="631.0" text="Meldung" />
+            <Region fx:id="verdachtRegion2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="10.0" prefHeight="10.0" />
+            <TextField fx:id="txtVerdachtAusweisnummer" alignment="CENTER" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" onKeyPressed="#txt1KeyPressed" prefHeight="57.0" prefWidth="581.0" promptText="Ausweisnummer">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </TextField>
+            <Region maxHeight="15.0" minHeight="10.0" prefHeight="10.0" prefWidth="600.0" />
+            <TextField fx:id="txtVerdachtImei" alignment="CENTER" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" onKeyPressed="#txt1KeyPressed" prefHeight="57.0" promptText="IMEI">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </TextField>
+            <Region maxHeight="15.0" minHeight="10.0" prefHeight="10.0" prefWidth="600.0" />
+            <ComboBox fx:id="comboVerdachtFirma" maxWidth="1.7976931348623157E308" prefHeight="57.0" prefWidth="618.0" promptText="Bitte Firma auswählen..." />
+            <Region prefHeight="330.0" prefWidth="600.0" />
+            <HBox layoutY="500.0" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btnVerdachtEnde" mnemonicParsing="false" onAction="#btnVerdachtEndeClick" prefHeight="101.0" prefWidth="302.0" text="Zurück" />
+                  <Button fx:id="btnVerdachtSpeichern" mnemonicParsing="false" onAction="#btnVerdachtSpeichernClick" prefHeight="101.0" prefWidth="302.0" text="Senden" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>
