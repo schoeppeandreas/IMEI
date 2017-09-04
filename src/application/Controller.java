@@ -223,7 +223,7 @@ public class Controller {
 	void initialize() {
 		//new																								// ist
 		layerVerdacht.setVisible(false); // blende den Verdachtslayer aus
-		comboVerdachtFirma.getItems().addAll("RTS", "CTDI", "FTS", "Randstad");
+		comboVerdachtFirma.getItems().addAll("RTS", "CTDI", "Randstad");
 		comboVerdachtFirma.setEditable(false);
 		
 		//15.05.17

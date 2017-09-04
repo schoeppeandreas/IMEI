@@ -12,7 +12,7 @@ public class WriteTxtFile {
 
 	AppProperties ap = AppProperties.getInstance();
 	private final DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy HH-mm-ss");
-	private final String fileName = ap.getPath().toString() + "\\Verdachtsfall_" + dateFormat.format(new Timestamp(new Date().getTime())) + ".txt";
+	private final String fileName = ap.getPath().toString() + "\\Verdachtsfaelle\\Verdachtsfall_" + dateFormat.format(new Timestamp(new Date().getTime())) + ".txt";
 	
 	private String imei;
 	private String kartenNummer;
