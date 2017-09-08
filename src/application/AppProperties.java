@@ -21,7 +21,8 @@ public class AppProperties {
 
 	// https://www.mkyong.com/java/java-properties-file-examples/
 	Properties properties = new Properties();
-	String path;
+	private String path;
+	private String pathKlaerfaelle;
 
 	private void read() {
 		FileInputStream inputStream = null;
@@ -35,20 +36,19 @@ public class AppProperties {
 				this.properties = new Properties();
 				this.properties.load(inputStream);
 			} else {
-				save(current);
+				setAllDefaultProperties(current); // Save
 			}
-
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
 
-	private void save(String path) {
+	private void save(String value, String propertie, String infotext) {
 		OutputStream output;
 		try {
 			output = new FileOutputStream("einstellungen.txt");
-			properties.setProperty("path", path);
-			properties.store(output, "Hier wird der Netzwerkpath zu den Exceldateien eingestellt.");
+			properties.setProperty(propertie, value);
+			properties.store(output, infotext);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -56,14 +56,40 @@ public class AppProperties {
 		}
 	}
 
+	
+	
+	
 	public String getPath() {
 		read();
 		this.path = properties.getProperty("path");
-		return path;
+		return this.path;
 	}
 
 	public void setPath(String path) {
-		save(path);
+		save(path, "path", "Hier wird der Netzwerkpath zu den Exceldateien eingestellt.");
 		this.path = path;
 	}
+	
+	
+	
+	
+	public String getPathKlaerfaelle() {
+		read();
+		this.pathKlaerfaelle = properties.getProperty("path_Klaerfaelle");
+		return this.pathKlaerfaelle;
+	}
+	
+	public void setPathKlaerfaelle(String pathKlaerfaelle) {	
+		save(path, "path_Klaerfaelle", "Hier wird der Netzwerkpath zur Ablage der Klaerfaelle eingestellt.");
+		this.pathKlaerfaelle = pathKlaerfaelle;
+	}
+	
+	
+	
+	
+	public void setAllDefaultProperties(String path){
+		setPath(path);
+		setPathKlaerfaelle(path);
+	}
+	
 }
